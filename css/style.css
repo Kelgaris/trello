@@ -1,0 +1,199 @@
+/*Fondo de color para el login y el registro de nuestra app*/
+.gradient-custom{
+    /* fallback for old browsers */
+    background: #6a11cb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+
+/*Fondo de color para nuestro tablero*/
+body{
+    background: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px),
+      linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1, #84fab0, #8fd3f4);
+    background-size: 40px 40px, 40px 40px, 100% 100%;
+    height: 92vh;
+    width: 100%;
+}
+
+
+.tituloIdea{
+    background-color: #8fd3f4;
+    border: 1px solid black;
+}
+
+.tituloToDo{
+    background-color: lightgoldenrodyellow;
+    border: 1px solid black;
+}
+
+.tituloWorking{
+    background-color: #fbc2eb;
+    border: 1px solid black;
+}
+
+.tituloDone{
+  background-color: #84fab0;
+  border: 1px solid black;
+}
+
+.tituloIdea, .tituloToDo, .tituloWorking, .tituloDone{
+  box-shadow: 
+  5px 5px white,  
+  5px 5px 0px 1px black;
+}
+
+.containerColumnas {
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.containerInformacion{
+  border: 1px solid black;
+  box-shadow: 
+  5px 5px #84fab0,  
+  5px 5px 0px 1px black;
+}
+
+.containerInformacion .containerTarjetas{
+  border: none;
+}
+
+.containerTarjetas{
+  height: 50vh;
+  border: 1px solid black;
+}
+
+.containerIdea .containerTarjetas{
+  border: 1px solid black;
+  box-shadow: 
+  5px 5px #8fd3f4,  
+  5px 5px 0px 1px black;
+}
+
+.containerToDo .containerTarjetas{
+  border: 1px solid black;
+  box-shadow: 
+  5px 5px lightgoldenrodyellow,  
+  5px 5px 0px 1px black;
+}
+
+.containerWorking .containerTarjetas{
+  border: 1px solid black;
+  box-shadow: 
+  5px 5px #fbc2eb,  
+  5px 5px 0px 1px black;
+}
+
+.containerDone .containerTarjetas{
+  border: 1px solid black;
+  box-shadow: 
+  5px 5px #84fab0,  
+  5px 5px 0px 1px black;
+}
+
+.carta{
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: lightyellow;
+  cursor: pointer;
+}
+
+.nuevaTarjeta{
+  background-color: #84fab0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.nuevaTarjeta:hover{
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+}
+
+.logoFulsi{
+  width: 30%;
+}
+
+
+/*MODAL*/
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContenido {
+  background: #fff;
+  padding: 20px;
+  max-width: 50%;
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cerrar {
+  position: absolute;
+  top: 28%;
+  right: 25%;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.cerrar:hover{
+  color: #f44336;
+}
+
+.modalInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.eliminar {
+  background-color: #f44336; 
+}
+
+button.eliminar:hover {
+  background-color: #d32f2f;
+}
+
+button.modificar {
+  background-color: #ffa500;
+}
+
+button.modificar:hover {
+  background-color: #e68900;
+}
+

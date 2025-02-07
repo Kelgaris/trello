@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./src/logo.png" type="image/x-icon">
+    <title>Fulsi - Inicio</title>
+</head>
+<body>
+    <div class="containerColumnas container-fluid col-12 d-flex justify-content-center d-lg-align-items-center mt-5">
+        <!--1ª Columna-->
+        <div class="containerInformacion col-sm-6 col-lg-2 por col-md-3 col-lg-2 mx-3 d-flex flex-column">
+            <div class="tituloInformacion bg-light text-center p-1">
+                <img src="./src/logo.png" alt="Logo Fulsi" class="logoFulsi mt-2">
+                <h3 class="mt-3">Bienvenido:</h3>
+                <div class="containerTarjetas">
+                    <h4 id="nombreUsuario" class="nombre text-center"></h4>
+                    <div class="containerBoton mt-5">
+                        <h5>¿Qué deseas hacer?</h5>
+                        <button type="submit" class="nuevaTarjeta p-2">+ Nueva Tarjeta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--2ª Columna-->
+        <div class="containerIdea col-sm-6 col-lg-2 por col-md-3 col-lg-2 mx-3 d-flex flex-column">
+            <div class="tituloIdea text-center p-1 d-flex justify-content-center align-items-center">
+                <h5>1  |  Ideas</h5>
+                <i class="fa-solid fa-arrow-right mx-2"></i>
+            </div>
+            <div class="containerTarjetas bg-light mt-4" id="containerTarjetasIdea">
+                
+            </div>
+        </div>
+        <!--3ª Columna-->
+        <div class="containerToDo col-sm-6 col-lg-2 por col-md-3 col-lg-2 mx-3 d-flex flex-column">
+            <div class="tituloToDo text-center p-1 d-flex justify-content-center align-items-center">
+                <h5>2 | Para Hacer</h5>
+                <i class="fa-solid fa-arrow-right mx-2"></i>                
+            </div>
+            <div class="containerTarjetas bg-light mt-4" id="containerTarjetasToDo"></div>
+        </div>
+        <!--4ª Columna-->
+        <div class="containerWorking col-sm-6 col-lg-2 por col-md-3 col-lg-2 mx-3 d-flex flex-column">
+            <div class="tituloWorking  text-center p-1 d-flex justify-content-center align-items-center">
+                <h5>3 | En proceso</h5>
+                <i class="fa-solid fa-arrow-right mx-2"></i>
+            </div>
+            <div class="containerTarjetas bg-light mt-4" id="containerTarjetasWorking"></div>
+        </div>
+        <!--5ª Columna-->
+        <div class="containerDone col-sm-6 col-lg-2 por col-md-3 col-lg-2 mx-3 d-flex flex-column">
+            <div class="tituloDone text-center p-1 d-flex justify-content-center align-items-center">
+                <h5>4 | Terminado</h5>
+                <i class="fa-solid fa-check mx-2"></i>
+            </div>
+            <div class="containerTarjetas bg-light mt-4" id="containerTarjetasDone"></div>
+        </div>
+    </div>
+    <div id="modal" class="modal oculto">
+        <div class="modalContenido">
+            <span id="cerrarModal" class="cerrar">&times;</span>
+            <div class="modalInfo">
+                <h3 id="tituloModal"></h3>
+                <h4 id="propietarioModal"></h4>
+                <h5 id="colaboradoresModal"></h5>
+                <p id="notasModal"></p>
+                <div class="botones">
+                    <button class="modificar" id="botonEditar"><i class="fa-regular fa-pen-to-square"></i></button>
+                    <button class="eliminar" id="botonEliminar"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
