@@ -168,7 +168,11 @@ body{
 }
 
 button {
+<<<<<<< HEAD
   background-color: greenyellow;
+=======
+  background-color: grey;
+>>>>>>> c169fe55326fe8319d2e524a2cf8ae04e326d4e0
   color: white;
   padding: 10px 20px;
   border: none;
